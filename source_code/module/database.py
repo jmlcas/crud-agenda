@@ -29,7 +29,7 @@ class Database:
         cursor = con.cursor()
 
         try:
-            cursor.execute("INSERT INTO phone_book(name,surnames,phone,address,notes) VALUES(%s, %s, %s, %s, %s))",
+            cursor.execute("INSERT INTO phone_book(name,surnames,phone,address,notes) VALUES(%s, %s, %s, %s, %s)",
                            (data['name'], data['surnames'], data['phone'], data['address'], data['notes'],))
             con.commit()
 
