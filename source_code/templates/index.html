@@ -58,6 +58,7 @@
                     <th>Apellidos</th>
                     <th>Número de teléfono</th>
                     <th>Email</th>
+                    <th>Notas</th>                    
                     <th>Opciones</th>
                   </tr>
                 </thead>
@@ -70,6 +71,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td></td>
                   </tr>
                     {% else %}
                   <tr>
@@ -78,6 +80,7 @@
                     <td>{{ row[2] }}</td>
                     <td>{{ row[3] }}</td>
                     <td>{{ row[4] }}</td>
+                    <td>{{ row[5] }}</td>                    
                     <td align="center">
                       <a href="/update/{{ row[0]}}">
                         <button type="button" class="btn btn-sm btn-warning btn-flat" title="Actualizar"><span class="glyphicon glyphicon-pencil"></span></button>
