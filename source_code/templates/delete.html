@@ -20,7 +20,7 @@
       <nav class="navbar navbar-static-top">
         <div class="container">
           <div class="navbar-header">
-            <a href="/" class="navbar-brand"><b>Phone</b>Book</a>
+            <a href="/" class="navbar-brand"><b>Teléfono</b>Book</a>
           </div>
         </div>
       </nav>
@@ -32,7 +32,7 @@
           <div class="box box-info">
             <div class="box-header with-border">
             	<center>
-            		<h3 class="box-title">Delete Phone Number</h3>
+            		<h3 class="box-title">Eliminar contacto</h3>
             	</center>
             </div>
 
@@ -40,7 +40,7 @@
             {% for row in data %}
               <div class="box-body">
                 <div class="form-group">
-                  <label class="col-sm-2 control-label">Name</label>
+                  <label class="col-sm-2 control-label">Nombre</label>
 
                   <div class="col-sm-10">
                     <input name="name" value="{{ row[1] }}" type="text" class="form-control" disabled>
@@ -48,7 +48,7 @@
                 </div>
                 
                 <div class="form-group">
-                  <label class="col-sm-2 control-label">Phone Number</label>
+                  <label class="col-sm-2 control-label">Número de teléfono</label>
 
                   <div class="col-sm-10">
                     <input name="phone" value="{{ row[2] }}" type="text" class="form-control" disabled>
@@ -56,7 +56,7 @@
                 </div>
                 
                 <div class="form-group">
-                  <label class="col-sm-2 control-label">Address</label>
+                  <label class="col-sm-2 control-label">Email</label>
 
                   <div class="col-sm-10">
                     <input name="address" value="{{ row[3] }}" type="text" class="form-control" disabled>
@@ -65,7 +65,7 @@
               </div>
 
               <div class="box-footer">
-                <a href="/"><button type="button" class="btn btn-default">Cancel</button></a>
+                <a href="/"><button type="button" class="btn btn-default">Cancelar</button></a>
                 <input name="delete" type="submit" class="btn btn-info pull-right" value="Delete">
               </div>
             {% endfor %}
