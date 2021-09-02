@@ -21,7 +21,7 @@
       <nav class="navbar navbar-static-top">
         <div class="container">
           <div class="navbar-header">
-            <a href="/" class="navbar-brand"><b>Phone</b>Book</a>
+            <a href="/" class="navbar-brand"><b>Teléfono</b>Book</a>
           </div>
         </div>
       </nav>
@@ -44,7 +44,7 @@
               <a href="/add">
               	<center>
               		<button type="button" class="btn btn-primary btn-flat">
-              			<span class="glyphicon glyphicon-plus"></span> Add Phone Number
+              			<span class="glyphicon glyphicon-plus"></span> Agregar número de teléfono
               		</button>
               	</center>
               </a>
@@ -54,10 +54,10 @@
               <table id="dataphone" class="table table-bordered table-striped">
                 <thead align="center">
                   <tr>
-                    <th >Name</th>
-                    <th>Phone Number</th>
-                    <th>Address</th>
-                    <th>Action</th>
+                    <th >Nombre</th>
+                    <th>Número de teléfono</th>
+                    <th>Email</th>
+                    <th>Opciones</th>
                   </tr>
                 </thead>
                 
@@ -77,10 +77,10 @@
                     <td>{{ row[3] }}</td>
                     <td align="center">
                       <a href="/update/{{ row[0]}}">
-                        <button type="button" class="btn btn-sm btn-warning btn-flat" title="Update"><span class="glyphicon glyphicon-pencil"></span></button>
+                        <button type="button" class="btn btn-sm btn-warning btn-flat" title="Actualizar"><span class="glyphicon glyphicon-pencil"></span></button>
                       </a>
                       <a href="/delete/{{ row[0]}}">
-                        <button type="button" class="btn btn-sm btn-danger btn-flat" title="Delete"><span class="glyphicon glyphicon-remove"></span></button>
+                        <button type="button" class="btn btn-sm btn-danger btn-flat" title="Eliminar"><span class="glyphicon glyphicon-remove"></span></button>
                       </a>
                     </td>
                   </tr>
