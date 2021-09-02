@@ -26,9 +26,9 @@ def add():
 def addphone():
     if request.method == 'POST' and request.form['save']:
         if db.insert(request.form):
-            flash("A new phone number has been added")
+            flash("Un nuevo contacto ha sido agregado")
         else:
-            flash("A new phone number can not be added")
+            flash("El nuevo contacto no se ha podido agregar")
 
         return redirect(url_for('index'))
     else:
@@ -49,10 +49,10 @@ def updatephone():
     if request.method == 'POST' and request.form['update']:
 
         if db.update(session['update'], request.form):
-            flash('A phone number has been updated')
+            flash('El contacto ha sido actualizado')
 
         else:
-            flash('A phone number can not be updated')
+            flash('El contacto no se ha podido actualizar')
 
         session.pop('update', None)
 
@@ -75,10 +75,10 @@ def deletephone():
     if request.method == 'POST' and request.form['delete']:
 
         if db.delete(session['delete']):
-            flash('A phone number has been deleted')
+            flash('El contacto ha sido eliminado')
 
         else:
-            flash('A phone number can not be deleted')
+            flash('El contacto no se ha podido eliminar')
 
         session.pop('delete', None)
 
