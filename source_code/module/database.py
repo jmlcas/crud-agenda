@@ -35,8 +35,8 @@ class Database:
         cursor = con.cursor()
 
         try:
-            cursor.execute("INSERT INTO phone_book(name,phone,address) VALUES(%s, %s, %s)",
-                           (data['name'], data['phone'], data['address'],))
+            cursor.execute("INSERT INTO phone_book(name,surnames,phone,address) VALUES(%s, %s, %s, %s)",
+                           (data['name'], data['surnames'], data['phone'], data['address'],))
             con.commit()
 
             return True
@@ -52,8 +52,8 @@ class Database:
         cursor = con.cursor()
 
         try:
-            cursor.execute("UPDATE phone_book set name = %s, phone = %s, address = %s where id = %s",
-                           (data['name'], data['phone'], data['address'], id,))
+            cursor.execute("UPDATE phone_book set name = %s, surnames = %s, phone = %s, address = %s where id = %s",
+                           (data['name'], data['surnames'], data['phone'], data['address'], id,))
             con.commit()
 
             return True
