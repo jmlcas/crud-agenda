@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `phone_book` (
 --
 
 INSERT INTO `phone_book` (`id`, `name`,  `surnames`, `phone`, `address`, `notes` ) VALUES
-(1, 'Juan', 'Pérez García', '619 777 888', 'juanpg@gmail.com' `notas`, );
+(1, 'Juan', 'Pérez García', '619 777 888', 'juanpg@gmail.com', 'el primero' );
 
 --
 -- Indexes for dumped tables
