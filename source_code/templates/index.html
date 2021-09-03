@@ -55,7 +55,6 @@
                 <thead align="center">
                   <tr>
                     <th>Nombre</th>
-                    <th>Apellidos</th>
                     <th>Número de teléfono</th>
                     <th>Email</th>
                     <th>Opciones</th>
@@ -69,7 +68,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                   </tr>
                     {% else %}
                   <tr>
@@ -77,7 +75,6 @@
                     <td>{{ row[1] }}</td>
                     <td>{{ row[2] }}</td>
                     <td>{{ row[3] }}</td>
-                    <td>{{ row[4] }}</td>
                     <td align="center">
                       <a href="/update/{{ row[0]}}">
                         <button type="button" class="btn btn-sm btn-warning btn-flat" title="Actualizar"><span class="glyphicon glyphicon-pencil"></span></button>
