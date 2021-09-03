@@ -29,7 +29,6 @@ SET time_zone = "Europe/Madrid";
 CREATE TABLE IF NOT EXISTS `phone_book` (
   `id` int(5) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `surnames` varchar(255) NOT NULL,
   `phone` varchar(50) NOT NULL,
   `address` varchar(255) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
@@ -38,8 +37,8 @@ CREATE TABLE IF NOT EXISTS `phone_book` (
 -- Dumping data for table `phone_book`
 --
 
-INSERT INTO `phone_book` (`id`, `name`,  `surnames`, `phone`, `address`) VALUES
-(1, 'Juan', 'Pérez García', '619 777 888', 'juanpg@gmail.com');
+INSERT INTO `phone_book` (`id`, `name`, `phone`, `address`) VALUES
+(1, 'Juan', '619 777 888', 'juanpg@gmail.com');
 
 --
 -- Indexes for dumped tables
