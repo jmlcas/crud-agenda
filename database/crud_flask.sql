@@ -31,16 +31,15 @@ CREATE TABLE IF NOT EXISTS `phone_book` (
   `name` varchar(255) NOT NULL,
   `surnames` varchar(255) NOT NULL,
   `phone` varchar(50) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `notes` varchar(255) NOT NULL
+  `address` varchar(255) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
 
 --
 -- Dumping data for table `phone_book`
 --
 
-INSERT INTO `phone_book` (`id`, `name`,  `surnames`, `phone`, `address`, `notes` ) VALUES
-(1, 'Juan', 'Pérez García', '619 777 888', 'juanpg@gmail.com', 'el primero' );
+INSERT INTO `phone_book` (`id`, `name`,  `surnames`, `phone`, `address`) VALUES
+(1, 'Juan', 'Pérez García', '619 777 888', 'juanpg@gmail.com');
 
 --
 -- Indexes for dumped tables
