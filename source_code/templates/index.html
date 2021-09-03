@@ -11,7 +11,15 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/AdminLTE.min.css')}}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/_all-skins.min.css')}}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/dataTables.bootstrap.css')}}">
-
+  
+  <style type="text/css">
+    td.list {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 66px;}
+  </style>
+  
 </head>
 
 <body class="hold-transition skin-blue layout-top-nav">
@@ -76,11 +84,11 @@
                     {% else %}
                   <tr>
                       {% for row in data %}
-                    <td>{{ row[1] }}</td>
-                    <td>{{ row[2] }}</td>
-                    <td>{{ row[3] }}</td>
-                    <td>{{ row[4] }}</td>
-                    <td>{{ row[5] }}</td>                    
+                    <td class="list">{{ row[1] }}</td>
+                    <td class="list">{{ row[2] }}</td>
+                    <td class="list">{{ row[3] }}</td>
+                    <td class="list">{{ row[4] }}</td>
+                    <td class="list">{{ row[5] }}</td>                    
                     <td align="center">
                       <a href="/update/{{ row[0]}}">
                         <button type="button" class="btn btn-sm btn-warning btn-flat" title="Actualizar"><span class="glyphicon glyphicon-pencil"></span></button>
