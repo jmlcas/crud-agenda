@@ -2,20 +2,20 @@ version: '3.3'
 
 services:
 
-  phonebook-mysql:
-    container_name: phonebook-mysql
+  agenda-mysql:
+    container_name: agenda-mysql
     build:
       context: .
       dockerfile: Dockerfile-mysql
-    restart: always
+    restart: unless-stopped
 
-  phonebook-app:
-    container_name: phonebook-app
+  agenda-app:
+    container_name: agenda-app
     build:
       context: .
       dockerfile: Dockerfile-app
     depends_on:
-      - phonebook-mysql
+      - agenda-mysql
     ports:
-      - "8181:8181"
-    restart: always
+      - "8200:8181"
+    restart: unless-stopped
