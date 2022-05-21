@@ -1,6 +1,6 @@
 Crud-application-using-flask-and-mysql
 
-View in "localhost:8181"
+View in "localhost:8200"
 
 
 
